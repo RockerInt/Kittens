@@ -26,21 +26,18 @@ var $itemsMenu = $(".menu a");
 
 var toggleMenu = function () {
     navMenu.classList.toggle("active");
-    btnMenu.classList.toggle("active");
     iMenu.classList.toggle("fa-bars");
     iMenu.classList.toggle("fa-close");
     iMenu.classList.toggle("fa-lg");
 }
 var showMenu = function () {
     navMenu.classList.add("active");
-    btnMenu.classList.add("active");
     iMenu.classList.remove("fa-bars");
     iMenu.classList.add("fa-close");
     iMenu.classList.add("fa-lg");
 }
 var hideMenu = function () {
     navMenu.classList.remove("active");
-    btnMenu.classList.remove("active");
     btnMenu.classList.add("fa-bars");
     iMenu.classList.remove("fa-close");
     iMenu.classList.remove("fa-lg");

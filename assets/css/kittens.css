@@ -377,9 +377,6 @@ h1 span {
     top: 10px;
     transition: 0.7s;
 }
-    .btn-menu.active {
-        background: rgba(0, 0, 0, 0);
-    }
 /*Media Querys*/
 /*Display*/
 @media screen and (-webkit-min-device-pixel-ratio: 3) {
@@ -667,7 +664,7 @@ h1 span {
 
     .menu {
         /*display: block; */
-        background: rgba(255, 60, 88, 0.8);
+        background: rgba(9,26,35,0.85);
         position: fixed;
         left: -100%;
         top: 0;
@@ -778,19 +775,40 @@ h1 span {
     .data {
         align-self: center;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .data label {
+        margin: 7px 0;
+    }
+
+    .datos {
+        width: 100%;
     }
 
     .contactos {        
-        zoom: 1.07;
+        zoom: 1.2;
+    }
+
+    .contacto {
+        width: 100%;
     }
 
     .text label {
-        zoom: 1.3;
+        zoom: 1.5;
+    }
+
+    .datos .text input {
+        font-size: 22px;
     }
 
     .sexo {
-        margin: 10px auto;
-        zoom: 1.45;
+        margin: 15px 0;
+        zoom: 1.6;
+    }
+
+    .sexo label {
+        display: block;
     }
 
     .intereses {
@@ -805,22 +823,29 @@ h1 span {
 
         .intereses label {
             display: block;
-            zoom: 1.5;
+            zoom: 1.92;
         }
 
     .comentarios {
         margin-left: 0;
         margin-top: 10px;
+        width: 100%;
     }
 
         .comentarios label {
-            zoom: 1.3;
+            zoom: 1.5;
+        }
+
+        .comentarios textarea {
+            height: 200px;
+            max-height: 300px;
+            width: 98%;
         }
 
         .comentarios .button {
             margin: auto;
             display: inherit;
-            zoom: 1.3;
+            zoom: 1.5;
         }
 
             .comentarios .button.float-right {
