@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="description" content="overview &amp; stats">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <title>kittens</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <section id="secPortada" class="portada">
+        <div class="img-background"></div>
+        <div class="content">
+            <header id="hdrHeader">
+                <span id="btnMenu" class="btn-menu">
+                    <i id="iMenu" class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+                <!--logotipo-->
+                <figure class="logotipo">
+                    <a href="index.html">
+                        <img width="220" src="assets/images/kittens.png" srcset="assets/images/kittens.png 1x, assets/images/kittens2x.png 2x" alt="kittens">
+                    </a>
+                </figure>
+                <!--menu-->
+                <nav id="navMenu" class="menu float-right">
+                    <ul>
+                        <!--home-->
+                        <li>
+                            <a href="index.html#secPortada">Home</a>
+                        </li>
+                        <!--kittens-->
+                        <li>
+                            <a href="#secKittens">Kittens</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--portada-->
+            <div>
+                <!--titulo-->
+                <h1 class="page-title">Adopta un Gatito</h1>
+                <!--resumen-->
+                <h3 class="page-description">Y transforma su mundo en felicidad!</h3>
+                <!--boton-->
+                <!--<a href="#secKittens" class="button">Conoce más</a>-->
+            </div>
+            <a href="#secKittens" class="btn-arrows-down">
+                <span class="scroll-down">
+                    <i class="fa-2x fa fa-angle-double-down" aria-hidden="true"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+    <!--contenido-->
+    <section class="kittens" id="secKittens">
+        <div class="content">
+            <!--titulo-->
+            <h2>Nuestros Kittens</h2>
+            <!--kitten 1-->
+            <article>
+                <!--imagen-->
+                <img class="float-right" data-src="assets/images/kittens-one.jpg|assets/images/kittens-one2x.jpg" alt="kittens acustica">
+                <div class="text-kitten-left">
+                    <!--titulo-->
+                    <h3>Spring</h3>
+                    <!--atributos-->
+                    <ol class="no-padding">
+                        <li>Spring es un gatito muy elegante</li>
+                        <li>Le gusta pasear y darse a notar</li>
+                        <li>Llena tu vida de glamour con Spring</li>
+                    </ol>
+                </div>
+            </article>
+            <!--kitten 2-->
+            <article>
+                <!--imagen-->
+                <img class="float-left" data-src="assets/images/kittens-two.jpg|assets/images/kittens-two2x.jpg" alt="kittens classic">
+                <div class="text-kitten-right">
+                    <!--titulo-->
+                    <h3>Summer</h3>
+                    <!--atributos-->
+                    <ol class="no-padding">
+                        <li>Summer es nuestro gatito mas jugueton</li>
+                        <li>Se divierte mucho con pelotas</li>
+                        <li>Summer puede hacer tus dias mas divertidos</li>
+                    </ol>
+                </div>
+            </article>
+            <!--kitten 3-->
+            <article>
+                <!--imagen-->
+                <img class="float-right" data-src="assets/images/kittens-three.jpg|assets/images/kittens-three2x.jpg" alt="kittens acustica">
+                <div class="text-kitten-left">
+                    <!--titulo-->
+                    <h3>Autumn</h3>
+                    <!--atributos-->
+                    <ol class="no-padding">
+                        <li>Autumn es la ternura hecha gato</li>
+                        <li>Es muy consentido y cariñoso</li>
+                        <li>Puedes contar con Autumn, siempre estara esperandote</li>
+                    </ol>
+                </div>
+            </article>
+            <!--kitten 4-->
+            <article>
+                <!--imagen-->
+                <img class="float-left" data-src="assets/images/kittens-four.jpg|assets/images/kittens-four2x.jpg" alt="kittens classic">
+                <div class="text-kitten-right">
+                    <!--titulo-->
+                    <h3>Winter</h3>
+                    <!--atributos-->
+                    <ol class="no-padding">
+                        <li>Winter es el señor aventura</li>
+                        <li>El es intrepido y osado</li>
+                        <li>Llena tu historia de aventuras con Winter</li>
+                    </ol>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content">
+            <div class="contacto">
+                <div>
+                    <img data-src="assets/images/kittens-white.png|assets/images/kittens-white2x.png" alt="logotipo blanco">
+                </div>
+                <div class="contactos">
+                    <div>
+                        <a href="tel:+573125040294">
+                            <b>Teléfono</b>
+                            <span>312 504 0294</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:contacto@kittens.com">
+                            <b>E-mail</b>
+                            <span>contacto@kittens.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <form class="form">
+                <div>
+                    <h3><b>Contacto</b></h3>
+                    <div class="linea"></div>
+                </div>
+                <div class="data">
+                    <div class="datos">
+                        <div class="text">
+                            <label for="txtNombre"><i class="fa fa-user" aria-hidden="true"></i> Nombre</label>
+                            <input required="" placeholder="Escribe tu nombre" type="text" id="txtNombre" name="txtNombre">
+                        </div>
+                        <div class="text">
+                            <label for="txtEmail"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</label>
+                            <input required="" placeholder="Escribe tu email" type="email" id="txtEmail" name="txtEmail">
+                        </div>
+                        <div class="sexo">
+                            <label for="rdoMujer">
+                            <input type="radio" name="rdoSexo" id="rdoMujer" value="mujer">  Mujer
+                        </label>
+                            <label for="rdoHombre">
+                            <input type="radio" name="rdoSexo" id="rdoHombre" value="hombre">  Hombre
+                        </label>
+                        </div>
+                        <div class="intereses">
+                            <div class="col">
+                                <label for="chkCotizacion">
+                                    <input type="checkbox" name="chkCotizacion" id="chkCotizacion" value="cotizacion">  Cotización
+                                </label>
+                                <label for="chkReclamo">
+                                    <input type="checkbox" name="chkReclamo" id="chkReclamo" value="reclamo">  Reclamo
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label for="chkComentarios">
+                                    <input type="checkbox" name="chkComentarios" id="chkComentarios" value="comentarios">  Comentarios
+                                </label>
+                                <label for="chkOtros">
+                                    <input type="checkbox" name="chkOtros" id="chkOtros" value="comentarios">  Otro
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="comentarios">
+                        <label for="txaComentarios"><i class="fa fa-comment" aria-hidden="true"></i> Comentarios</label>
+                        <textarea id="txaComentarios" name="txaComentarios" rows="5" cols="30"></textarea>
+                        <input class="button float-right" id="btnSubmint" type="submit" name="btnSubmint" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/kittens.css">
+    <!--<link rel="stylesheet" media="(max-width: 800px)" href="assets/css/media-query.css">-->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Montserrat:400,700:latin', 'Allerta::latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); 
+    </script>
+    <!--Styles-->
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="assets/js/kittens.js"></script>
+    <script type="text/javascript">
+        swipeMenu(document.body);
+    </script>
+    <!--End Scripts-->
+</body>
+
+</html>
