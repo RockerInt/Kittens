@@ -82,9 +82,13 @@ h1 span {
     text-decoration: underline;
 }
 
+.header {
+    padding: 60px 0;
+}
+
 .content {
     margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .logotipo {
@@ -219,22 +223,21 @@ h1 span {
         border-radius: 8px;
         min-height: 300px;
         padding-left: 20px; 
+        display: flex;
+        justify-content: center;
     }
 
     .kittens img {
         padding: 0;
         margin: 1px;
-        position: relative;
+        display: inline-block;
         width: 298px;
     }
 
-.text-kitten-right {
-    margin: 70px 0 70px 340px;
+.text-kitten {
+    margin: auto 20px;
 }
 
-.text-kitten-left {
-    margin: 70px 15px;
-}
 
 .footer {
     background: rgba(43,65,78,0.7);
@@ -430,6 +433,7 @@ h1 span {
         background-image: url('../images/backgroundWXGA.jpg');
     }
 }
+
 /*@media screen and (orientation : portrait) {
     .img-background {
         background-position-x: -80%;
@@ -460,6 +464,14 @@ h1 span {
         font-size: 45px;
     }
 
+    .header {
+        padding: 0;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
     .portada .content {
         padding: 25px 20px 30px 20px;
     }
@@ -479,31 +491,19 @@ h1 span {
         text-align: center;
     }
 
-        .kittens .float-left, .kittens .float-right {
-            float: none;
-            position: static;
-        }
-
-    .content-kitten-b {
-        height: auto;
-    }
-
     .kittens article {
         padding: 5px;
+        flex-direction: column;
     }
 
-    .kittens article div {
+    .text-kitten {
         padding: 0;
-        margin: 0 0 20px 0;
+        margin: 20px 0;
     }
 
-    .text-kitten-right {
-        position: static;
-    }
-
-    .kitten-left {
-        margin-top: 30px !important;
-    }
+        .text-kitten.kitten-right {
+            margin-top: 40px;
+        }
     /*kittens*/
     /*footer*/
     .footer {
@@ -578,10 +578,6 @@ h1 span {
         min-height: 90vh;
     }
 
-    header {
-        margin: 20px auto 0 auto;
-    }
-
     .portada .content div {
         margin: auto;
     }
@@ -611,40 +607,6 @@ h1 span {
         margin: 5px 0 25px 0;
         display: inline-block;
     }
-    /*portada*/
-    /*kittens*/
-    .kittens {
-        padding: 20px 10px 20px 10px;
-        text-align: center;
-    }
-
-        .kittens .float-left, .kittens .float-right {
-            float: none;
-            position: static;
-        }
-
-    .content-kitten-b {
-        height: auto;
-    }
-
-    .kittens article div {
-        padding: 0;
-        margin: 0 0 20px 0;
-    }
-
-    .text-kitten-right {
-        position: static;
-    }
-
-    .kitten-left {
-        margin-top: 30px !important;
-        width: 300px;
-    }
-
-    .kitten-right {
-        width: 200px;
-    }
-    /*kittens*/    
 }
 
 @media screen and (max-width: 500px) {
@@ -747,10 +709,6 @@ h1 span {
         padding: 0;
         margin: 0 0 20px 0;
     }
-
-    .text-kitten-right {
-        position: static;
-    }
     
     .kittens img {
         width: 98%;
@@ -761,16 +719,7 @@ h1 span {
 }
 /*Phablet*/
 /*Smartphones*/
-@media screen and (max-width: 440px) {
-    /*portada*/
-    h1 {
-        font-size: 28px;
-    }
-
-    .portada h3 {
-        font-size: 14px;
-    }
-    /*portada*/
+@media screen and (max-width: 480px) {    
     /*footer*/
     .kittens h2 {
         font-size: 30px;
@@ -856,6 +805,17 @@ h1 span {
                 float: none;
             }
     /*footer*/
+}
+@media screen and (max-width: 440px) {
+    /*portada*/
+    h1 {
+        font-size: 28px;
+    }
+
+    .portada h3 {
+        font-size: 14px;
+    }
+    /*portada*/
 }
 
 @media screen and (max-width: 410px) {
