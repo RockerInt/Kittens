@@ -377,6 +377,10 @@ h1 span {
     top: 10px;
     transition: 0.7s;
 }
+
+    .btn-menu.active {
+        background: rgba(0, 0, 0, 0);
+    }
 /*Media Querys*/
 /*Display*/
 @media screen and (-webkit-min-device-pixel-ratio: 3) {
