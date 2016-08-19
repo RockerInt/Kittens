@@ -96,6 +96,15 @@ h1 span {
     margin-left: 0;
 }
 
+    .logotipo img {  
+        transition: 1s;      
+        opacity: 0;
+    }
+
+        .logotipo img.b-loaded {
+            opacity: 1;
+        }
+
 .menu {
     font-size: 24px;
     display: inline-block;
@@ -111,6 +120,21 @@ h1 span {
             text-decoration: none;
         }
 
+.div-loading {
+    margin: 0;
+    padding: 45vh 45vw;
+    min-height: 480px;
+    z-index: -2;
+    background-color:  transparent;
+    position: fixed; 
+    text-align: center;
+}
+
+.img-loading {
+    position: fixed;
+    margin: auto;
+}
+
 .img-background {
     min-height: 480px;
     height: 100vh;
@@ -118,7 +142,7 @@ h1 span {
     position: fixed;
     z-index: -1;
     background-image: url('../images/backgroundWXGA.jpg');
-    background-color:  #384c58;
+    background-color:  transparent;
     background-size: cover;    
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -232,7 +256,13 @@ h1 span {
         margin: 1px;
         display: inline-block;
         width: 298px;
+        transition: 1s;
+        opacity: 0;
     }
+
+        .kittens img.b-loaded {
+            opacity: 1;
+        }
 
 .text-kitten {
     margin: auto 20px;
@@ -260,7 +290,13 @@ h1 span {
     .contacto img {
         display: block;
         width: 275px;
+        transition: 1s;
+        opacity: 0;
     }
+
+        .contacto img.b-loaded {
+            opacity: 1;
+        }
 
 .contactos {
     display: flex;
@@ -384,6 +420,7 @@ h1 span {
     .btn-menu.active {
         background: rgba(0, 0, 0, 0);
     }
+
 /*Media Querys*/
 /*Display*/
 @media screen and (-webkit-min-device-pixel-ratio: 3) {
