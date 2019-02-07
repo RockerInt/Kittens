@@ -1,7 +1,9 @@
-## Descripción
+# Descripción
 
-¿Qué ha cambiado?
+## ¿Qué ha cambiado?
 
+  
+  
 - [ ] Frontend
 - [ ] Backend
 - [ ] Server
